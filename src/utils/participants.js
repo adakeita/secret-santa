@@ -9,17 +9,6 @@ export const participants = [
     { name: "Kim", cannotHave: ["Curtis"], preferences: [] },
     { name: "Curtis", cannotHave: ["Kim"], preferences: [] },
   
-    // Test participants
-    {
-      name: "TestUser1",
-      cannotHave: ["Mathilde", "Marthe", "Tumi", "Mo", "Kim", "Curtis"],
-      preferences: [],
-    },
-    {
-      name: "TestUser2",
-      cannotHave: ["Mathilde", "Marthe", "Tumi", "Mo", "Kim", "Curtis"],
-      preferences: [],
-    },
   ];
 
 // Load assignments from JSONBin
