@@ -216,3 +216,12 @@
     margin-top: 30px;
     font-style: italic;
 }
+
+@media (max-width: 768px) {
+  
+    .menu_page {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+}

@@ -98,6 +98,11 @@ button:focus {
     gap: 10px;
   }
 
+  .menu_page {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
   .participant-button_home {
     font-size: 16px;
     padding: 8px 15px;
