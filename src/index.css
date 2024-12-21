@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* ===========================================
+   GLOBAL STYLING
+=========================================== */
+
+
+
 body {
   margin: 0;
   padding: 0;
@@ -13,10 +21,31 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Lobster", cursive;
   color: #ffffff;
   text-align: center;
   margin-bottom: 15px;
+  letter-spacing: 1.2px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.pages {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 button {
@@ -27,7 +56,7 @@ button {
   padding: 12px 20px;
   border: none;
   border-radius: 25px;
-  font-size: 16px;
+  font-size: 22px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
@@ -53,4 +82,50 @@ input {
 
 ul {
   list-style-type: none;
+}
+
+button:focus {
+  outline: 2px solid #a91d1e;
+  outline-offset: 2px;
+}
+
+/* ===========================================
+     RESPONSIVE DESIGN
+  =========================================== */
+
+@media (max-width: 768px) {
+  .participant-list_home {
+    gap: 10px;
+  }
+
+  .participant-button_home {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  .sortable-list_preferences li {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  h1,h2,h3 {
+    letter-spacing: 1.6px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
 }

@@ -19,8 +19,10 @@ const HomePage = () => {
     <div className="home_page pages">
       {!isNameSubmitted ? (
         <div className="intro_home">
-          <h1>Welcome to Secret Santa</h1>
-          <p>Select your name to get started:</p>
+          <div className="home-info">
+            <h1>Welcome to Secret Santa</h1>
+            <p>Select your name to get started:</p>
+          </div>
           <ul className="participant-list_home">
             {participantNames.map((participantName) => (
               <li className="participant-li_home" key={participantName}>
