@@ -1,0 +1,49 @@
+/* ===========================================
+   HEADER COMPONENT
+=========================================== */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #7d1516;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-family: "Lobster", cursive;
+    font-size: 1.8rem;
+    letter-spacing: 1.2px;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-button {
+    background-color: white;
+    color: #d82e2f;
+    padding: 4px 18px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 3px 4px 0px rgba(94, 7, 7, 0.664);
+    border: 1px solid #680808;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+    background-color: #f4f4f4;
+    transform: translateY(-3px);
+}

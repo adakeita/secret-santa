@@ -101,3 +101,118 @@
 .qr_code_section a:hover {
     text-decoration: none;
 }
+
+/* ===========================================
+   MENU PAGE
+=========================================== */
+
+.menu_page {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 90vh;
+}
+
+.menu-heading {
+    font-size: 2.5rem;
+}
+
+.menu-intro {
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.menu-wrapper p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.lunch,
+.dinner {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.menu-category {
+    font-size: 1.8rem;
+    color: #f9f9f9;
+    letter-spacing: 1.4px;
+}
+
+.dinner {
+    padding-top: 1rem;
+}
+
+.menu-list {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+    list-style-type: disc;
+    list-style: none;
+}
+
+.menu-list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* ===========================================
+     ITINERARY PAGE
+  =========================================== */
+
+.itinerary_page {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.itinerary-heading {
+    font-size: 2.5rem;
+}
+
+.itinerary-content {
+    max-width: 600px;
+}
+
+.itinerary-intro {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.kjoreplan {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.itinerary-category {
+    font-size: 1.4rem;
+    color: #f9f9f9;
+    margin-top: 20px;
+    letter-spacing: 1.6px;
+    text-align: left;
+}
+
+.itinerary-detail {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.itinerary-closing {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    font-style: italic;
+}
