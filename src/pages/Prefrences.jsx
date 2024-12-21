@@ -40,7 +40,6 @@ const PreferencesPage = ({ name }) => {
   );
 
   useEffect(() => {
-
     setCategories([
       "Movies",
       "Books",
@@ -83,9 +82,17 @@ const PreferencesPage = ({ name }) => {
       return;
     }
 
+    let eligibleParticipants = getEligibleParticipants(name, assignments);
+
+    // Retry mechanism if no eligible participants are found
+    if (eligibleParticipants.length === 0) {
+      alert("No valid matches available. Retrying...");
+      eligibleParticipants = getEligibleParticipants(name, {});
+    }
+
     // Assign a random participant
-    const randomIndex = Math.floor(Math.random() * options.length);
-    const assignedSanta = options[randomIndex];
+    const randomIndex = Math.floor(Math.random() * eligibleParticipants.length);
+    const assignedSanta = eligibleParticipants[randomIndex].name;
 
     // Update and save assignments
     assignments[name] = assignedSanta;
