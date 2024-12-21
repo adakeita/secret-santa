@@ -13,7 +13,7 @@
     position: absolute;
     top: -10%;
     color: #FFFFFF;
-    font-size: 1.2rem;
+    font-size: 2rem;
     opacity: 0.3;
     animation: snowfall linear infinite;
   }
